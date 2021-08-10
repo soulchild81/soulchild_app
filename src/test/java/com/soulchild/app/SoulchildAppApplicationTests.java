@@ -10,7 +10,7 @@ import org.springframework.util.Assert;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-class SoulchildAppApplicationTests {
+public class SoulchildAppApplicationTests {
 
     @Test
     public void contextLoads() {
