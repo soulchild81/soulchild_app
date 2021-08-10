@@ -15,8 +15,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@WebMvcTest
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@WebMvcTest
 public class DrawControllerTests {
 
 //    @Autowired

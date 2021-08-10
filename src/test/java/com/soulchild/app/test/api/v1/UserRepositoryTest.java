@@ -42,61 +42,61 @@ public class UserRepositoryTest {
 
     @Autowired
     UserService userService;
-
-    @DisplayName("수행전 데이터 삭제")
-    @After
-    public void cleanup(){
-        userRepository.deleteAll();
-    }
-
-    @DisplayName("유저 등록")
-    @Test
-    public void save(){
-        String id = "hayoon_ku";
-        String name = "KU_HAYOON";
-
-        UserSaveRequestDto dto = UserSaveRequestDto.builder().name(name).id(id).build();
-
-        String url = "http://localhost:8080" + "/api/v1/user/add";
-
-        List<User> userList = userRepository.findAll();
-        ResponseEntity<User> responseEntity = restTemplate.postForEntity(url , dto , User.class);
-
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(responseEntity.getBody());
-
-        User user = userList.get(0);
-        assertThat(userList.size()).isGreaterThan(0);
-
-    }
-
-    @DisplayName("유저 조회")
-    @Test
-    public void read(){
-        UserResponseDto dto = userService.findById(16L);
-        assertThat(dto).isNotNull();
-    }
-
-    @DisplayName("유저 업데이트")
-    @Test
-    public void update(){
-
-    }
-
-    @DisplayName("베이스 타임 업데이트")
-    @Test
-    public void BaseTimeUpdate(){
-        LocalDateTime now = LocalDateTime.of(2021 , 5 , 13 , 0 , 0 , 0);
-        userRepository.save(User.builder().name("test123333").id("test1234141441").build());
-
-        List<User> userList = userRepository.findAll();
-        User user = userList.get(3);
-
-        System.out.println("#CREATE_TIME :" + user.getCreateDate());
-        System.out.println("#MODIFIED_TIME :" + user.getModifiedDate());
-
-
-    }
+//
+//    @DisplayName("수행전 데이터 삭제")
+//    @After
+//    public void cleanup(){
+//        userRepository.deleteAll();
+//    }
+//
+//    @DisplayName("유저 등록")
+//    @Test
+//    public void save(){
+//        String id = "hayoon_ku";
+//        String name = "KU_HAYOON";
+//
+//        UserSaveRequestDto dto = UserSaveRequestDto.builder().name(name).id(id).build();
+//
+//        String url = "http://localhost:8080" + "/api/v1/user/add";
+//
+//        List<User> userList = userRepository.findAll();
+//        ResponseEntity<User> responseEntity = restTemplate.postForEntity(url , dto , User.class);
+//
+//        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+//        assertThat(responseEntity.getBody());
+//
+//        User user = userList.get(0);
+//        assertThat(userList.size()).isGreaterThan(0);
+//
+//    }
+//
+//    @DisplayName("유저 조회")
+//    @Test
+//    public void read(){
+//        UserResponseDto dto = userService.findById(16L);
+//        assertThat(dto).isNotNull();
+//    }
+//
+//    @DisplayName("유저 업데이트")
+//    @Test
+//    public void update(){
+//
+//    }
+//
+//    @DisplayName("베이스 타임 업데이트")
+//    @Test
+//    public void BaseTimeUpdate(){
+//        LocalDateTime now = LocalDateTime.of(2021 , 5 , 13 , 0 , 0 , 0);
+//        userRepository.save(User.builder().name("test123333").id("test1234141441").build());
+//
+//        List<User> userList = userRepository.findAll();
+//        User user = userList.get(3);
+//
+//        System.out.println("#CREATE_TIME :" + user.getCreateDate());
+//        System.out.println("#MODIFIED_TIME :" + user.getModifiedDate());
+//
+//
+//    }
 
 
 }
