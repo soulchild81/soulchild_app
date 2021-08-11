@@ -45,7 +45,7 @@ dependencies {
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'junit:junit:4.13'
-    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
-    compile 'org.springframework.boot:spring-boot-starter-jdbc:2.1.0.RELEASE'
-    runtimeOnly 'mysql:mysql-connector-java'
+    //compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //compile 'org.springframework.boot:spring-boot-starter-jdbc:2.1.0.RELEASE'
+    //runtimeOnly 'mysql:mysql-connector-java'
 }
