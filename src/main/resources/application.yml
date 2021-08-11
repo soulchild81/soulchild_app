@@ -1,22 +1,22 @@
-spring:
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://soulchilddb.cdtktv5hbauz.ap-northeast-2.rds.amazonaws.com:3306/soulchilddb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
-#    username: soulchild
-#    password: 8824guss
+#spring:
+##  datasource:
+##    driver-class-name: com.mysql.cj.jdbc.Driver
+##    url: jdbc:mysql://soulchilddb.cdtktv5hbauz.ap-northeast-2.rds.amazonaws.com:3306/soulchilddb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+##    username: soulchild
+##    password: 8824guss
+##
+##  jpa:
+##    show-sql: true
 #
-#  jpa:
-#    show-sql: true
-
-  logging:
-    level:
-      root: INFO
-      com.bugs: INFO
-      org.springframework.web: INFO
-      jdbc.audit: ERROR
-      jdbc.resultsettable: ERROR
-      jdbc.resultset: ERROR
-      jdbc.sqltiming: ERROR
-      jdbc.connection: ERROR
-      jdbc.sqlonly: INFO
-
+#  logging:
+#    level:
+#      root: INFO
+#      com.bugs: INFO
+#      org.springframework.web: INFO
+#      jdbc.audit: ERROR
+#      jdbc.resultsettable: ERROR
+#      jdbc.resultset: ERROR
+#      jdbc.sqltiming: ERROR
+#      jdbc.connection: ERROR
+#      jdbc.sqlonly: INFO
+#
