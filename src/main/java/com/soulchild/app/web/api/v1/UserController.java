@@ -15,7 +15,7 @@ import java.util.Calendar;
 @RequestMapping("/api/v1/")
 public class UserController {
 
-    private final UserService userService;
+    //private final UserService userService;
 
 //    @PutMapping("user/add")
 //    public Long save(@RequestBody UserSaveRequestDto requestDto){
